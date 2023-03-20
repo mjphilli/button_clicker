@@ -6,71 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Button Clicker</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="nav-bar">
         <div class="nav">
             <h1 class="nav-title">Dojonary</h1>
             <input type="text" id="search" class="search">
-            <button class="login">Login</button>
+            <button onclick="login(this)" class="login">Login</button>
         </div>
     </div>
     <div class="container">
         <div class="col1">
             <div class="topleft">
-                <div class="top">
-                    <img id="icon" src="./images/jane-m.jpg" alt="user icon">
-                </div>
                 <div class="bottom">
                     <div class="bottom-contents">
-                        <h1>Jane Doe</h1>
-                        <div class="location">
-                            <img id="loc" src="./icons/map-marker.png" alt="location">
-                            <label>Seattle</label>
-                        </div>
-                        <p>Developer | Engineer | Problem Solver</p>
-                        <p>Master of shadows and the Internet!</p>
-                        <a href=""><img id="gear" src="./icons/gear.png" alt="gear">edit profile</a>
+                        <h1 class="marginbottom">ninja</h1>
+                        <p class="marginbottom"><em>noun</em></p>
+                        <p class="marginbottom">Plural: <em>ninjas</em></p>
+                        <button onclick="like()" class="likes">13 likes</button>
+                    </div>
+                    <div class="bottom2">
+                        <p>A practioner skilled in the</p>
+                        <p><a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
                     </div>
                 </div>
             </div>
             <div class="bottomleft">
-                <div class="top">
-                    <label>Education</label>
-                </div>
                 <div class="bottom">
                     <div class="bottom-contents">
-                        <h2 class="marginbottom">Coding Dojo - Full Stack Bootcamp</h2>
-                        <p class="grey marginbottom">Dec 2019 - Mar 2020</p>
-                        <p class="marginbottom">Triple black belt in Python, MERN, and C#...</p>
+                        <h1 class="marginbottom">ninja</h1>
+                        <p class="marginbottom"><em>noun</em></p>
+                        <p class="marginbottom">Plural: <em>ninjas</em></p>
+                        <button onclick="like()" class="likes">37 likes</button>
+                    </div>
+                    <div class="bottom2">
+                        <p>A <a href="#">programmer</a> who breaks</p>
+                        <p>down problems with <a href="#">zen</a>-like</p>
+                        <p>focus</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col2">
             <div class="topright">
-                <div class="top">
-                    <p>2</p>
-                    <label>Connection Requests</label>
-                </div>
                 <div class="bottom">
                     <div class="bottom-contents">
-                        <div class="row">
-                            <img src="./images/todd-s.jpg" alt="todd">
-                            <label>Todd E</label>
-                            <div class="buttons">
-                                <img src="./icons/accept-circle.png" alt="accept">
-                                <img src="./icons/close-circle.png" alt="close">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <img src="./images/phil-s.jpg" alt="phil">
-                            <label>Phil K</label>
-                            <div class="buttons">
-                                <img src="./icons/accept-circle.png" alt="accept">
-                                <img src="./icons/close-circle.png" alt="close">
-                            </div>
-                        </div>
+                        <p>Dojonary is</p>
+                        <p>defined by YOU</p>
+                        <button onclick="remove(this)" class="add">Add Definition</button>
                     </div>
                 </div>
             </div>
