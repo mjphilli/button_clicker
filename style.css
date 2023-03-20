@@ -10,39 +10,29 @@
     background-color: black;
     justify-content: space-around;
     align-items: center;
-    width: 800px;
+    width: 850px;
 }
 .nav-bar {
     display: flex;
+    margin: 0 auto;
     justify-content: center;
+    width: 850px;
 }
 .nav-title {
     color:white;
     margin-left: 50px;
 }
-.nav-links {
-    display: flex;
-    color: white;
-    align-items: center;
-    justify-content: space-around;
-    width: 500px;
-}
-.nav-links > li > a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-li {
-    list-style: none;
-}
+/* like button */
 .likes {
     background-color: yellow;
     color:black;
 }
+/* add definition */
 .add {
     background-color: greenyellow;
     color:black;
 }
+/* login button */
 .login {
     background-color: blue;
     color:white;
@@ -50,7 +40,7 @@ li {
 .container{
     display: flex;
     margin: 0px auto;
-    width: 50%;
+    width: 850px
 }
 .topleft, .bottomleft, .topright {
     border: 1px solid grey;
@@ -67,11 +57,14 @@ li {
     font-size: 20px;
 }
 .bottomleft {
-    position: relative;
-    top: 100px;
+    /* position: relative;
+    top: 100px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 .bottomleft > .bottom {
-    width: 500px;
+    width: 400px;
     height: 200px;
     background-color: white;
     display: flex;
@@ -79,9 +72,6 @@ li {
 }
 .bottomleft > .bottom > .bottom-contents {
     padding: 10px 20px;
-}
-.grey {
-    color: grey;
 }
 .marginbottom {
     margin-bottom: 15px;
@@ -105,10 +95,16 @@ li {
     top: 50px;
 }
 .col1 {
-    position: relative;
-    left: 50px;
+    /* position: relative;
+    left: 50px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
 }
 .col2 {
-    position: relative;
-    left: 100px;
+    /* position: relative;
+    left: 100px; */
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 100px; */
 }
